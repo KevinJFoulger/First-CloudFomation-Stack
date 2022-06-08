@@ -1,7 +1,31 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: My first attempt at IaC with AWS CloudFormation. This creates a public S3 Bucket.
 Resources:
-   HelloBucketHelloWorldUniqueName20220608:
-      Type: 'AWS::S3::Bucket'
-      Properties:
+  Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      Name: HelloBucketHelloWorldKevin20220608
       AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+
+      
+      
+      
+      
+      
+      
+      
+      
+        Resources:
+    "HelloBucketHelloWorldUniqueName20220608
+      "Type" : "AWS::S3::Bucket",
+      "Properties" : {
+        "AccessControl" : "PublicRead",
+        "WebsiteConfiguration" : {
+           "IndexDocument" : "index.html",
+           "ErrorDocument" : "error.html"
+        }
+      }
+    },

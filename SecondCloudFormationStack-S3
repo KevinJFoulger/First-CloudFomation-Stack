@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: 2010-09-09
+Metadata:
+  'AWS::CloudFormation::Designer':
+    fdaf4cfc-290f-4deb-9ba1-e1d65f2c07e3:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 728
+        'y': 192
+      z: 0
+Resources:
+  Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      Name: HelloBucketHelloWorldKevin20220608
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: fdaf4cfc-290f-4deb-9ba1-e1d65f2c07e3
