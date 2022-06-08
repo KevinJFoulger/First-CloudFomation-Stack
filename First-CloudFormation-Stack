@@ -1,0 +1,7 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: My first attempt at IaC with AWS CloudFormation. This creates a public S3 Bucket.
+Resources:
+   HelloBucketHelloWorldUniqueName20220608:
+      Type: 'AWS::S3::Bucket'
+      Properties:
+      AccessControl: PublicRead
